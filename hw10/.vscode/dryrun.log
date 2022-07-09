@@ -1,0 +1,13 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory `/Users/rarmst/Documents/UMBC/CMSC 331/hw10'
+bison -y -d banana.y
+flex --noyywrap banana.l
+gcc -c lex.yy.c
+ 
+bison -y -d banana.y
+gcc -c y.tab.c
+g++ -c symtab.cpp
+gcc -c strlist2.c
+g++ -o banana lex.yy.o y.tab.o symtab.o strlist2.o
+make: Leaving directory `/Users/rarmst/Documents/UMBC/CMSC 331/hw10'
+ 

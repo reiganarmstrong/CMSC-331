@@ -1,0 +1,42 @@
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( ASSIGN ( LVALUE   0 "n" ) ( VALUE 12 ) ) 
+( FOR   0 ( ASSIGN ( LVALUE   1 "i" ) ( VALUE 1 ) ) ( LEQ ( RVALUE   1 "i" ) ( RVALUE   0 "n" ) ) ( ASSIGN ( LVALUE   1 "i" ) ( PLUS ( RVALUE   1 "i" ) ( VALUE 1 ) ) ) 
+( PRINTSTR   0 "* " ) 
+) 
+)
+( PRINTLNSTR   1 "" ) 
+)
+( FOR   3 ( ASSIGN ( LVALUE   2 "j" ) ( VALUE 1 ) ) ( LEQ ( RVALUE   2 "j" ) ( MINUS ( RVALUE   0 "n" ) ( VALUE 2 ) ) ) ( ASSIGN ( LVALUE   2 "j" ) ( PLUS ( RVALUE   2 "j" ) ( VALUE 1 ) ) ) 
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( PRINTSTR   2 "* " ) 
+( FOR   1 ( ASSIGN ( LVALUE   1 "i" ) ( VALUE 1 ) ) ( LEQ ( RVALUE   1 "i" ) ( MINUS ( RVALUE   2 "j" ) ( VALUE 1 ) ) ) ( ASSIGN ( LVALUE   1 "i" ) ( PLUS ( RVALUE   1 "i" ) ( VALUE 1 ) ) ) 
+( PRINTSTR   3 ". " ) 
+) 
+)
+( PRINTSTR   4 "* " ) 
+)
+( FOR   2 ( ASSIGN ( LVALUE   1 "i" ) ( PLUS ( RVALUE   2 "j" ) ( VALUE 1 ) ) ) ( LEQ ( RVALUE   1 "i" ) ( MINUS ( RVALUE   0 "n" ) ( VALUE 2 ) ) ) ( ASSIGN ( LVALUE   1 "i" ) ( PLUS ( RVALUE   1 "i" ) ( VALUE 1 ) ) ) 
+( PRINTSTR   5 ". " ) 
+) 
+)
+( PRINTLNSTR   6 "* " ) 
+)
+) 
+)
+( FOR   4 ( ASSIGN ( LVALUE   1 "i" ) ( VALUE 1 ) ) ( LEQ ( RVALUE   1 "i" ) ( RVALUE   0 "n" ) ) ( ASSIGN ( LVALUE   1 "i" ) ( PLUS ( RVALUE   1 "i" ) ( VALUE 1 ) ) ) 
+( PRINTSTR   7 "* " ) 
+) 
+)
+( PRINTLNSTR   8 "" ) 
+)
+( PRINTLNSTR   9 "The End." ) 
+)
+

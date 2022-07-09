@@ -1,0 +1,13 @@
+banana {
+   var{int} y ;
+    
+   y := 1 ;
+   while ( y <= 7 ) {
+
+      println y ;
+      y := y + 1 ;
+   }
+
+   println "The End." ;
+}
+

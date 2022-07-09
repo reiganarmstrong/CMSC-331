@@ -1,0 +1,11 @@
+Script started on Wed Sep 29 19:22:46 2021
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                         [0m[27m[24m[Jrarmst@MacBook-Pro hw3 % [K[?2004hjava Testc Car.java Jeep.java Subaru.java Test.java Vehicle.java[59D                                                           [59D[7mghc -o Main3 Main3.hs HW3.hs [27m[29D[27mg[27mh[27mc[27m [27m-[27mo[27m [27mM[27ma[27mi[27mn[27m3[27m [27mM[27ma[27mi[27mn[27m3[27m.[27mh[27ms[27m [27mH[27mW[27m3[27m.[27mh[27ms[27m [?2004l
+[1 of 2] Compiling HW3              ( HW3.hs, HW3.o )
+[2 of 2] Compiling Main             ( Main3.hs, Main3.o )
+Linking Main3 ...
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                         [0m[27m[24m[Jrarmst@MacBook-Pro hw3 % [K[?2004h../Main3[1m [0m[0m [?2004l
+div35 42 is [3,5,6,9,10,12,15,18,20,21,24,25,27,30,33,35,36,39,40,42]
+The third perfect number is 496
+[1m[7m%[27m[1m[0m                                                                                                                                                                                                         [0m[27m[24m[Jrarmst@MacBook-Pro hw3 % [K[?2004heexit[?2004l
+
+Script done on Wed Sep 29 19:23:17 2021

@@ -1,0 +1,33 @@
+( STMTLIST
+( STMTLIST
+( ASSIGN ( LVALUE   0 "y" ) ( VALUE 1 ) ) 
+( WHILE   1 ( LEQ ( RVALUE   0 "y" ) ( VALUE 7 ) ) 
+( STMTLIST
+( STMTLIST
+( ASSIGN ( LVALUE   1 "x" ) ( VALUE 1 ) ) 
+( WHILE   0 ( LEQ ( RVALUE   1 "x" ) ( VALUE 3 ) ) 
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( PRINTSTR   0 "( " ) 
+( PRINTINT ( RVALUE   1 "x" ) ) 
+)
+( PRINTSTR   1 ", " ) 
+)
+( PRINTINT ( RVALUE   0 "y" ) ) 
+)
+( PRINTLNSTR   2 ")" ) 
+)
+( ASSIGN ( LVALUE   1 "x" ) ( PLUS ( RVALUE   1 "x" ) ( VALUE 1 ) ) ) 
+)
+) 
+)
+( ASSIGN ( LVALUE   0 "y" ) ( PLUS ( RVALUE   0 "y" ) ( VALUE 1 ) ) ) 
+)
+) 
+)
+( PRINTLNSTR   3 "The End." ) 
+)
+

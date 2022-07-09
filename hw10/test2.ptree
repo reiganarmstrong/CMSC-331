@@ -1,0 +1,34 @@
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( ASSIGN ( LVALUE   0 "x" ) ( VALUE 4 ) ) 
+( PRINTSTR   0 "x is " ) 
+)
+( PRINTLNINT ( RVALUE   0 "x" ) ) 
+)
+( IFTHENELSE   0 ( LEQ ( RVALUE   0 "x" ) ( VALUE 5 ) ) 
+( PRINTLNSTR   1 "Yes, x is less than or equal to 5" ) 
+
+( PRINTLNSTR   2 "No, x is not less than or equal to 5" ) 
+) 
+)
+( ASSIGN ( LVALUE   0 "x" ) ( VALUE 9 ) ) 
+)
+( PRINTSTR   3 "x is " ) 
+)
+( PRINTLNINT ( RVALUE   0 "x" ) ) 
+)
+( IFTHENELSE   1 ( LEQ ( RVALUE   0 "x" ) ( VALUE 5 ) ) 
+( PRINTLNSTR   4 "Yes, x is less than or equal to 5" ) 
+
+( PRINTLNSTR   5 "No, x is not less than or equal to 5" ) 
+) 
+)
+( PRINTLNSTR   6 "The End." ) 
+)
+

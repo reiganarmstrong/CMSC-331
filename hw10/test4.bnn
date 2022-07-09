@@ -1,0 +1,17 @@
+banana {
+   var{int} y ;
+    
+   println "Printng odd numbers up to 20:" ;
+
+   y := 1 ;
+   while ( y <= 20 ) {
+
+      if ( 2 * ( y / 2 ) !=  y ) then {
+         println y ;
+      }
+      y := y + 1 ;
+   }
+
+   println "The End." ;
+}
+

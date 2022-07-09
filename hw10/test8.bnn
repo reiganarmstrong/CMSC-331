@@ -1,0 +1,10 @@
+banana {
+   var{int} i ;
+
+   for (i := 10 ; i >= 1 ; i := i - 1) {
+      println i ;
+   }
+
+   println "Happy New Year!" ;
+   println "The End." ;
+}

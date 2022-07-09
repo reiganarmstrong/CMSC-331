@@ -1,0 +1,7 @@
+( STMTLIST
+( FOR   0 ( ASSIGN ( LVALUE   0 "i" ) ( VALUE 1 ) ) ( LEQ ( RVALUE   0 "i" ) ( VALUE 7 ) ) ( ASSIGN ( LVALUE   0 "i" ) ( PLUS ( RVALUE   0 "i" ) ( VALUE 1 ) ) ) 
+( PRINTLNINT ( RVALUE   0 "i" ) ) 
+) 
+( PRINTLNSTR   0 "The End." ) 
+)
+

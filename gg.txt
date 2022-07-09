@@ -1,0 +1,10 @@
+aab=<S>
+aab=<A><B>
+aab=<A>ab
+aab=aab
+
+aab=<S>
+aab=aa<B>
+aab=aab
+        
+

@@ -1,0 +1,22 @@
+banana {
+   var{int} y ;
+   var{int} x ;
+    
+   y := 1 ;
+   while ( y <= 7 ) {
+
+      x := 1 ;
+      while (x <= 3 ) {
+         print "( " ;
+         print x ;
+         print ", " ;
+         print y ;
+         println ")" ;
+         x := x + 1 ;
+      }
+      y := y + 1 ;
+   }
+
+   println "The End." ;
+}
+

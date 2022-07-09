@@ -1,0 +1,10 @@
+( STMTLIST
+( STMTLIST
+( ASSIGN ( LVALUE   0 "x" ) ( VALUE 1 ) ) 
+( IFTHEN   0 ( LEQ ( RVALUE   0 "x" ) ( VALUE 5 ) ) 
+( PRINTLNSTR   0 "Yes, x is less than or equal to 5" ) 
+) 
+)
+( PRINTLNSTR   1 "The End." ) 
+)
+

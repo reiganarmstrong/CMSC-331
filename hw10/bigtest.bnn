@@ -1,0 +1,126 @@
+banana {
+   var{int} a ;
+   var{int} b ;
+   var{int} c ;
+   var{int} d ;
+   var{int} e ;
+   var{int} f ;
+   var{int} g ;
+   var{int} prod ;
+   a:=1 ;
+   b:=1 ;
+   d:=1 ;
+   println "These sets of the 7 numbers in the set 1-7 multiply to give a value greater than 400" ;
+
+   while ( a <= 7 ) {
+      prod := a ;
+      if ( prod > 400 ) then {
+         print " [" ;
+         print a ;
+         println "] " ;
+      }
+      b := 1 ;
+      while ( b <= 7 ) {
+         prod := a * b ;
+         if ( prod > 400 ) then {
+            print " [" ;
+            print a ;
+            print ", " ;
+            print b ;
+            println "] " ;
+         }
+         for (c := 1 ; c <= 7 ; c := c + 1) {
+            prod := a * b * c ;
+            if ( prod > 400 ) then {
+               print " [" ;
+               print a ;
+               print ", " ;
+               print b ;
+               print ", " ;
+               print c ;
+               println "] " ;
+            }
+            d := 1 ;
+            while ( d <= 7 ) {
+               prod := a * b * c * d ;
+               if ( prod > 400 ) then {
+                  print " [" ;
+                  print a ;
+                  print ", " ;
+                  print b ;
+                  print ", " ;
+                  print c ;
+                  print ", " ;
+                  print d ;
+                  println "] " ;
+               }
+               for (e := 1 ; e <= 7 ; e := e + 1) {
+                  prod := a * b * c * d * e ;
+                  if ( prod > 400 ) then {
+                     print " [" ;
+                     print a ;
+                     print ", " ;
+                     print b ;
+                     print ", " ;
+                     print c ;
+                     print ", " ;
+                     print d ;
+                     print ", " ;
+                     print e ;
+                     println "] " ;
+                  }
+                  for (f := 1 ; f <= 7 ; f := f + 1) {
+                     prod := a * b * c * d * e * f ;
+                     if ( prod > 400 ) then {
+                        print " [" ;
+                        print a ;
+                        print ", " ;
+                        print b ;
+                        print ", " ;
+                        print c ;
+                        print ", " ;
+                        print d ;
+                        print ", " ;
+                        print e ;
+                        print ", " ;
+                        print f ;
+                        println "] " ;
+                     }
+                     for (g := 1 ; g <= 7 ; g := g + 1) {
+                        prod := a * b * c * d * e * f * g ;
+                        if ( prod > 400 ) then {
+                           print " [" ;
+                           print a ;
+                           print ", " ;
+                           print b ;
+                           print ", " ;
+                           print c ;
+                           print ", " ;
+                           print d ;
+                           print ", " ;
+                           print e ;
+                           print ", " ;
+                           print f ;
+                           print ", " ;
+                           print g ;
+                           println "] " ;
+                        }
+
+                     }
+
+                  }
+
+               }
+
+               d := d + 1 ;
+            }
+         }
+         b := b + 1 ;
+      }
+      a := a + 1 ;
+   }
+
+   println "" ;
+
+   println "The End." ;
+}

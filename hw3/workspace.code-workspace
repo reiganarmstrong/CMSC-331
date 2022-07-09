@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"name": "SSH FS - umbc",
+			"uri": "ssh://umbc/afs/umbc.edu/users/r/e/reagana1/home"
+		}
+	],
+	"settings": {}
+}

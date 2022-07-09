@@ -1,0 +1,10 @@
+banana {
+   var{int} x ;
+
+   x:= 1 ;
+   if ( x <= 5 ) then {
+      println "Yes, x is less than or equal to 5" ;
+   }
+
+   println "The End." ;
+}

@@ -1,0 +1,9 @@
+banana {
+   var{int} i ;
+
+   for (i := 1 ; i <= 7 ; i := i+1)  {
+      println i ;
+   }
+
+   println "The End." ;
+}

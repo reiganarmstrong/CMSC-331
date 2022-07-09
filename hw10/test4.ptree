@@ -1,0 +1,18 @@
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( PRINTLNSTR   0 "Printng odd numbers up to 20:" ) 
+( ASSIGN ( LVALUE   0 "y" ) ( VALUE 1 ) ) 
+)
+( WHILE   1 ( LEQ ( RVALUE   0 "y" ) ( VALUE 20 ) ) 
+( STMTLIST
+( IFTHEN   0 ( NEQ ( TIMES ( VALUE 2 ) ( DIVIDE ( RVALUE   0 "y" ) ( VALUE 2 ) ) ) ( RVALUE   0 "y" ) ) 
+( PRINTLNINT ( RVALUE   0 "y" ) ) 
+) 
+( ASSIGN ( LVALUE   0 "y" ) ( PLUS ( RVALUE   0 "y" ) ( VALUE 1 ) ) ) 
+)
+) 
+)
+( PRINTLNSTR   1 "The End." ) 
+)
+

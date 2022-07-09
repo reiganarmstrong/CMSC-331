@@ -1,0 +1,14 @@
+Script started on Wed Oct  6 22:55:37 2021
+[1m[7m%[27m[1m[0m                                                                         [0m[27m[24m[Jrarmst@MacBook-Pro hw4 % [K[?2004h[7mghc -o Main4 Main4.hs HW4.hs[27m[28D[27mg[27mh[27mc[27m [27m-[27mo[27m [27mM[27ma[27mi[27mn[27m4[27m [27mM[27ma[27mi[27mn[27m4[27m.[27mh[27ms[27m [27mH[27mW[27m4[27m.[27mh[27ms[?2004l
+[1 of 2] Compiling HW4              ( HW4.hs, HW4.o )
+[2 of 2] Compiling Main             ( Main4.hs, Main4.o )
+Linking Main4 ...
+[1m[7m%[27m[1m[0m                                                                         [0m[27m[24m[Jrarmst@MacBook-Pro hw4 % [K[?2004h../mai   Main4[1m [0m[0m [?2004l
+[1,3,5]
+[1,3,5,7]
+["lions","tigers","bears"]
+[1,2,3,4,7,9,10,13,15,18,20]
+[1.1,2.1,2.1,2.2,2.3,2.4,3.4,7.2,8.4,19.7,20.1,31.2,9999.7]
+[1m[7m%[27m[1m[0m                                                                         [0m[27m[24m[Jrarmst@MacBook-Pro hw4 % [K[?2004heexit[?2004l
+
+Script done on Wed Oct  6 22:56:03 2021

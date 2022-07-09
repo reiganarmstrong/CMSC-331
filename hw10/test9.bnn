@@ -1,0 +1,32 @@
+banana {
+   var{int} n ;
+   var{int} i ;
+   var{int} j ;
+
+   n := 12 ;
+
+   for (i:=1 ; i<=n ; i:=i+1) {
+      print "* " ;
+   }
+   println "" ;
+
+   for (j:=1 ; j<=n-2 ; j:=j+1) {
+      print "* " ;
+	  for (i:=1 ; i <= j-1 ; i:=i+1) {
+	     print ". " ;
+	  }
+	  print "* " ;
+	  for (i:=j+1 ; i <= n-2 ; i:=i+1) {
+	     print ". " ;
+	  }
+      println "* " ;
+   }
+
+
+   for (i:=1 ; i<=n ; i:=i+1) {
+      print "* " ;
+   }
+   println "" ;
+
+   println "The End." ;
+}

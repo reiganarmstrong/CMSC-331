@@ -1,0 +1,15 @@
+banana {
+   var{int} i ;
+   var{int} j ;
+
+   for (i := 1 ; i <= 7 ; i := i + 1) {
+      for (j:= 1 ; j <= 3 ; j := j + 1 ) {
+         print "i = " ;
+         print i ;
+         print ", j = " ;
+         println j ;
+      }
+   }
+
+   println "The End." ;
+}

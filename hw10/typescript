@@ -1,0 +1,75 @@
+Script started on Mon Nov 29 11:00:59 2021
+[1m[7m%[27m[1m[0m                                                                                   [0m[27m[24m[Jrarmst@MacBook-Pro-8 hw10 % [K[?2004hexitgforth test2.fs[13Dexit           [11D    [7mcat test1.bnn[27m[13D[27me[27mx[27mi[27mt[27m [27m [27m [27m [27m [27m [27m [27m [27m [9Dcat test1.bnn.bnn 2.bnn[?2004l
+banana {
+   var{int} x ;
+
+   x := 4 ;
+   print "x is " ;
+   println x ;
+   if ( x <= 5 ) then {
+      println "Yes, x is less than or equal to 5" ;
+   } else {
+      println "No, x is not less than or equal to 5" ;
+   }
+
+   x := 9 ;
+   print "x is " ;
+   println x ;
+   if ( x <= 5 ) then {
+      println "Yes, x is less than or equal to 5" ;
+   } else {
+      println "No, x is not less than or equal to 5" ;
+   }
+
+   println "The End." ;
+}
+[1m[7m%[27m[1m[0m                                                                                   [0m[27m[24m[Jrarmst@MacBook-Pro-8 hw10 % [K[?2004h[7m./banana <test1.bnn >test1.ptree[27m[32D[27m.[27m/[27mb[27ma[27mn[27ma[27mn[27ma[27m [27m<[27mt[27me[27ms[27mt[27m1[27m.[27mb[27mn[27mn[27m [27m>[27mt[27me[27ms[27mt[27m1[27m.[27mp[27mt[27mr[27me[27me.ptree 2.ptree[P[17C [18D2.bnn >test2.ptree[17D[?2004l
+[1m[7m%[27m[1m[0m                                                                                   [0m[27m[24m[Jrarmst@MacBook-Pro-8 hw10 % [K[?2004h[7m./HW10 <test1.ptree[27m[19D[27m.[27m/[27mH[27mW[27m1[27m0[27m [27m<[27mt[27me[27ms[27mt[27m1[27m.[27mp[27mt[27mr[27me[27me.ptree 2.ptree[?2004l
+VARIABLE _LV 1000 CELLS ALLOT
+
+
+: _Main
+4 _LV 0 CELLS + ( x ) ! 
+." x is " ( 0 )
+
+
+_LV 0 CELLS + @ ( x ) . CR 
+
+
+_LV 0 CELLS + @ ( x ) 5 <= IF ( 0 ) 
+." Yes, x is less than or equal to 5" ( 1 ) CR 
+ELSE ( 0 ) ." No, x is not less than or equal to 5" ( 2 ) CR 
+
+ENDIF ( 0 )
+
+
+9 _LV 0 CELLS + ( x ) ! 
+
+." x is " ( 3 )
+
+
+_LV 0 CELLS + @ ( x ) . CR 
+
+
+_LV 0 CELLS + @ ( x ) 5 <= IF ( 1 ) 
+." Yes, x is less than or equal to 5" ( 4 ) CR 
+ELSE ( 1 ) ." No, x is not less than or equal to 5" ( 5 ) CR 
+
+ENDIF ( 1 )
+
+
+." The End." ( 6 ) CR 
+
+;
+
+_Main bye
+[1m[7m%[27m[1m[0m                                                                                   [0m[27m[24m[Jrarmst@MacBook-Pro-8 hw10 % [K[?2004h[7m./HW10 < test1.ptree >test1.fs[27m[30D[27m.[27m/[27mH[27mW[27m1[27m0[27m [27m<[27m [27mt[27me[27ms[27mt[27m1[27m.[27mp[27mt[27mr[27me[27me[27m [27m>[27mt[27me[27ms[27mt[27m1[27m.[27mf[27ms.fs 2.fs[1C[P[16C [17D2.ptree >test2.fs[16D[?2004l
+[1m[7m%[27m[1m[0m                                                                                   [0m[27m[24m[Jrarmst@MacBook-Pro-8 hw10 % [K[?2004h[7mgforth test1.fs[27m[15D[27mg[27mf[27mo[27mr[27mt[27mh[27m [27mt[27me[27ms[27mt[27m1[27m.[27mf[27ms.fs 2.fs[?2004l
+x is 4 
+Yes, x is less than or equal to 5
+x is 9 
+No, x is not less than or equal to 5
+The End.
+[1m[7m%[27m[1m[0m                                                                                   [0m[27m[24m[Jrarmst@MacBook-Pro-8 hw10 % [K[?2004heexit[?2004l
+
+Script done on Mon Nov 29 11:01:53 2021

@@ -1,0 +1,10 @@
+( STMTLIST
+( STMTLIST
+( FOR   0 ( ASSIGN ( LVALUE   0 "i" ) ( VALUE 10 ) ) ( GEQ ( RVALUE   0 "i" ) ( VALUE 1 ) ) ( ASSIGN ( LVALUE   0 "i" ) ( MINUS ( RVALUE   0 "i" ) ( VALUE 1 ) ) ) 
+( PRINTLNINT ( RVALUE   0 "i" ) ) 
+) 
+( PRINTLNSTR   0 "Happy New Year!" ) 
+)
+( PRINTLNSTR   1 "The End." ) 
+)
+

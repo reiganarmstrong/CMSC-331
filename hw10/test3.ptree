@@ -1,0 +1,13 @@
+( STMTLIST
+( STMTLIST
+( ASSIGN ( LVALUE   0 "y" ) ( VALUE 1 ) ) 
+( WHILE   0 ( LEQ ( RVALUE   0 "y" ) ( VALUE 7 ) ) 
+( STMTLIST
+( PRINTLNINT ( RVALUE   0 "y" ) ) 
+( ASSIGN ( LVALUE   0 "y" ) ( PLUS ( RVALUE   0 "y" ) ( VALUE 1 ) ) ) 
+)
+) 
+)
+( PRINTLNSTR   0 "The End." ) 
+)
+

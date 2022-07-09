@@ -1,0 +1,270 @@
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( ASSIGN ( LVALUE   0 "a" ) ( VALUE 1 ) ) 
+( ASSIGN ( LVALUE   1 "b" ) ( VALUE 1 ) ) 
+)
+( ASSIGN ( LVALUE   3 "d" ) ( VALUE 1 ) ) 
+)
+( PRINTLNSTR   0 "These sets of the 7 numbers in the set 1-7 multiply to give a value greater than 400" ) 
+)
+( WHILE  13 ( LEQ ( RVALUE   0 "a" ) ( VALUE 7 ) ) 
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( ASSIGN ( LVALUE   7 "prod" ) ( RVALUE   0 "a" ) ) 
+( IFTHEN   0 ( GTH ( RVALUE   7 "prod" ) ( VALUE 400 ) ) 
+( STMTLIST
+( STMTLIST
+( PRINTSTR   1 " [" ) 
+( PRINTINT ( RVALUE   0 "a" ) ) 
+)
+( PRINTLNSTR   2 "] " ) 
+)
+) 
+)
+( ASSIGN ( LVALUE   1 "b" ) ( VALUE 1 ) ) 
+)
+( WHILE  12 ( LEQ ( RVALUE   1 "b" ) ( VALUE 7 ) ) 
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( ASSIGN ( LVALUE   7 "prod" ) ( TIMES ( RVALUE   0 "a" ) ( RVALUE   1 "b" ) ) ) 
+( IFTHEN   1 ( GTH ( RVALUE   7 "prod" ) ( VALUE 400 ) ) 
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( PRINTSTR   3 " [" ) 
+( PRINTINT ( RVALUE   0 "a" ) ) 
+)
+( PRINTSTR   4 ", " ) 
+)
+( PRINTINT ( RVALUE   1 "b" ) ) 
+)
+( PRINTLNSTR   5 "] " ) 
+)
+) 
+)
+( FOR  11 ( ASSIGN ( LVALUE   2 "c" ) ( VALUE 1 ) ) ( LEQ ( RVALUE   2 "c" ) ( VALUE 7 ) ) ( ASSIGN ( LVALUE   2 "c" ) ( PLUS ( RVALUE   2 "c" ) ( VALUE 1 ) ) ) 
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( ASSIGN ( LVALUE   7 "prod" ) ( TIMES ( TIMES ( RVALUE   0 "a" ) ( RVALUE   1 "b" ) ) ( RVALUE   2 "c" ) ) ) 
+( IFTHEN   2 ( GTH ( RVALUE   7 "prod" ) ( VALUE 400 ) ) 
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( PRINTSTR   6 " [" ) 
+( PRINTINT ( RVALUE   0 "a" ) ) 
+)
+( PRINTSTR   7 ", " ) 
+)
+( PRINTINT ( RVALUE   1 "b" ) ) 
+)
+( PRINTSTR   8 ", " ) 
+)
+( PRINTINT ( RVALUE   2 "c" ) ) 
+)
+( PRINTLNSTR   9 "] " ) 
+)
+) 
+)
+( ASSIGN ( LVALUE   3 "d" ) ( VALUE 1 ) ) 
+)
+( WHILE  10 ( LEQ ( RVALUE   3 "d" ) ( VALUE 7 ) ) 
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( ASSIGN ( LVALUE   7 "prod" ) ( TIMES ( TIMES ( TIMES ( RVALUE   0 "a" ) ( RVALUE   1 "b" ) ) ( RVALUE   2 "c" ) ) ( RVALUE   3 "d" ) ) ) 
+( IFTHEN   3 ( GTH ( RVALUE   7 "prod" ) ( VALUE 400 ) ) 
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( PRINTSTR  10 " [" ) 
+( PRINTINT ( RVALUE   0 "a" ) ) 
+)
+( PRINTSTR  11 ", " ) 
+)
+( PRINTINT ( RVALUE   1 "b" ) ) 
+)
+( PRINTSTR  12 ", " ) 
+)
+( PRINTINT ( RVALUE   2 "c" ) ) 
+)
+( PRINTSTR  13 ", " ) 
+)
+( PRINTINT ( RVALUE   3 "d" ) ) 
+)
+( PRINTLNSTR  14 "] " ) 
+)
+) 
+)
+( FOR   9 ( ASSIGN ( LVALUE   4 "e" ) ( VALUE 1 ) ) ( LEQ ( RVALUE   4 "e" ) ( VALUE 7 ) ) ( ASSIGN ( LVALUE   4 "e" ) ( PLUS ( RVALUE   4 "e" ) ( VALUE 1 ) ) ) 
+( STMTLIST
+( STMTLIST
+( ASSIGN ( LVALUE   7 "prod" ) ( TIMES ( TIMES ( TIMES ( TIMES ( RVALUE   0 "a" ) ( RVALUE   1 "b" ) ) ( RVALUE   2 "c" ) ) ( RVALUE   3 "d" ) ) ( RVALUE   4 "e" ) ) ) 
+( IFTHEN   4 ( GTH ( RVALUE   7 "prod" ) ( VALUE 400 ) ) 
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( PRINTSTR  15 " [" ) 
+( PRINTINT ( RVALUE   0 "a" ) ) 
+)
+( PRINTSTR  16 ", " ) 
+)
+( PRINTINT ( RVALUE   1 "b" ) ) 
+)
+( PRINTSTR  17 ", " ) 
+)
+( PRINTINT ( RVALUE   2 "c" ) ) 
+)
+( PRINTSTR  18 ", " ) 
+)
+( PRINTINT ( RVALUE   3 "d" ) ) 
+)
+( PRINTSTR  19 ", " ) 
+)
+( PRINTINT ( RVALUE   4 "e" ) ) 
+)
+( PRINTLNSTR  20 "] " ) 
+)
+) 
+)
+( FOR   8 ( ASSIGN ( LVALUE   5 "f" ) ( VALUE 1 ) ) ( LEQ ( RVALUE   5 "f" ) ( VALUE 7 ) ) ( ASSIGN ( LVALUE   5 "f" ) ( PLUS ( RVALUE   5 "f" ) ( VALUE 1 ) ) ) 
+( STMTLIST
+( STMTLIST
+( ASSIGN ( LVALUE   7 "prod" ) ( TIMES ( TIMES ( TIMES ( TIMES ( TIMES ( RVALUE   0 "a" ) ( RVALUE   1 "b" ) ) ( RVALUE   2 "c" ) ) ( RVALUE   3 "d" ) ) ( RVALUE   4 "e" ) ) ( RVALUE   5 "f" ) ) ) 
+( IFTHEN   5 ( GTH ( RVALUE   7 "prod" ) ( VALUE 400 ) ) 
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( PRINTSTR  21 " [" ) 
+( PRINTINT ( RVALUE   0 "a" ) ) 
+)
+( PRINTSTR  22 ", " ) 
+)
+( PRINTINT ( RVALUE   1 "b" ) ) 
+)
+( PRINTSTR  23 ", " ) 
+)
+( PRINTINT ( RVALUE   2 "c" ) ) 
+)
+( PRINTSTR  24 ", " ) 
+)
+( PRINTINT ( RVALUE   3 "d" ) ) 
+)
+( PRINTSTR  25 ", " ) 
+)
+( PRINTINT ( RVALUE   4 "e" ) ) 
+)
+( PRINTSTR  26 ", " ) 
+)
+( PRINTINT ( RVALUE   5 "f" ) ) 
+)
+( PRINTLNSTR  27 "] " ) 
+)
+) 
+)
+( FOR   7 ( ASSIGN ( LVALUE   6 "g" ) ( VALUE 1 ) ) ( LEQ ( RVALUE   6 "g" ) ( VALUE 7 ) ) ( ASSIGN ( LVALUE   6 "g" ) ( PLUS ( RVALUE   6 "g" ) ( VALUE 1 ) ) ) 
+( STMTLIST
+( ASSIGN ( LVALUE   7 "prod" ) ( TIMES ( TIMES ( TIMES ( TIMES ( TIMES ( TIMES ( RVALUE   0 "a" ) ( RVALUE   1 "b" ) ) ( RVALUE   2 "c" ) ) ( RVALUE   3 "d" ) ) ( RVALUE   4 "e" ) ) ( RVALUE   5 "f" ) ) ( RVALUE   6 "g" ) ) ) 
+( IFTHEN   6 ( GTH ( RVALUE   7 "prod" ) ( VALUE 400 ) ) 
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( PRINTSTR  28 " [" ) 
+( PRINTINT ( RVALUE   0 "a" ) ) 
+)
+( PRINTSTR  29 ", " ) 
+)
+( PRINTINT ( RVALUE   1 "b" ) ) 
+)
+( PRINTSTR  30 ", " ) 
+)
+( PRINTINT ( RVALUE   2 "c" ) ) 
+)
+( PRINTSTR  31 ", " ) 
+)
+( PRINTINT ( RVALUE   3 "d" ) ) 
+)
+( PRINTSTR  32 ", " ) 
+)
+( PRINTINT ( RVALUE   4 "e" ) ) 
+)
+( PRINTSTR  33 ", " ) 
+)
+( PRINTINT ( RVALUE   5 "f" ) ) 
+)
+( PRINTSTR  34 ", " ) 
+)
+( PRINTINT ( RVALUE   6 "g" ) ) 
+)
+( PRINTLNSTR  35 "] " ) 
+)
+) 
+)
+) 
+)
+) 
+)
+) 
+)
+( ASSIGN ( LVALUE   3 "d" ) ( PLUS ( RVALUE   3 "d" ) ( VALUE 1 ) ) ) 
+)
+) 
+)
+) 
+)
+( ASSIGN ( LVALUE   1 "b" ) ( PLUS ( RVALUE   1 "b" ) ( VALUE 1 ) ) ) 
+)
+) 
+)
+( ASSIGN ( LVALUE   0 "a" ) ( PLUS ( RVALUE   0 "a" ) ( VALUE 1 ) ) ) 
+)
+) 
+)
+( PRINTLNSTR  36 "" ) 
+)
+( PRINTLNSTR  37 "The End." ) 
+)
+

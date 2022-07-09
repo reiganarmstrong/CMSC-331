@@ -1,0 +1,18 @@
+( STMTLIST
+( FOR   1 ( ASSIGN ( LVALUE   0 "i" ) ( VALUE 1 ) ) ( LEQ ( RVALUE   0 "i" ) ( VALUE 7 ) ) ( ASSIGN ( LVALUE   0 "i" ) ( PLUS ( RVALUE   0 "i" ) ( VALUE 1 ) ) ) 
+( FOR   0 ( ASSIGN ( LVALUE   1 "j" ) ( VALUE 1 ) ) ( LEQ ( RVALUE   1 "j" ) ( VALUE 3 ) ) ( ASSIGN ( LVALUE   1 "j" ) ( PLUS ( RVALUE   1 "j" ) ( VALUE 1 ) ) ) 
+( STMTLIST
+( STMTLIST
+( STMTLIST
+( PRINTSTR   0 "i = " ) 
+( PRINTINT ( RVALUE   0 "i" ) ) 
+)
+( PRINTSTR   1 ", j = " ) 
+)
+( PRINTLNINT ( RVALUE   1 "j" ) ) 
+)
+) 
+) 
+( PRINTLNSTR   2 "The End." ) 
+)
+
